@@ -1,5 +1,5 @@
 function [xdot_hat] = Lorenzhat(t,x,weights)
-%UNTITLED Summary of this function goes here
+% This function holds the discovered dynamics of the Lorenz system.
 Phi = fitLibrary(x');
 xdot_hat = (Phi*weights)';
 end
